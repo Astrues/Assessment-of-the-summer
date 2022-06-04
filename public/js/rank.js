@@ -11,7 +11,7 @@ const axios = require("axios").default;
     spans[0].addEventListener("click", () => {
         recommend.style.display = 'block';
         rank.style.display = 'none';
-        if (width < 770) footer.style.top = 190 + "rem";
+        if (width < 770) footer.style.top = 175 + "rem";
         if (width > 770) footer.style.top = 110 + "rem";
     })
     spans[1].addEventListener("click", () => {
