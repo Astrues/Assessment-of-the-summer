@@ -57,13 +57,13 @@ module.exports = {
             // 新的文件内容与源文件一致,且会自动引入打包资源
             template: path.resolve(__dirname, '../public/index.html'),
             // 导入ico文件
-            //  favicon: (__dirname, './public/favicon.ico')
+             favicon: (__dirname, './public/favicon.ico')
         })
     ],
     // 开发服务器
     devServer: {
         host: "localhost", // 启动服务器域名
-        port: "5051", // 启动服务器端口号
+        port: "5055", // 启动服务器端口号
         open: true, // 是否自动打开浏览器
     },
     experiments: {

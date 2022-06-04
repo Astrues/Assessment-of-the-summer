@@ -78,7 +78,7 @@ module.exports = {
             // 新的文件内容与源文件一致,且会自动引入打包资源
             template: path.resolve(__dirname, '../public/index.html'),
             // 导入ico文件
-            // favicon: (__dirname, './public/favicon.ico')
+            favicon: (__dirname, './public/favicon.ico')
         }),
         // 提取css成单独文件
         new MiniCssExtractPlugin({

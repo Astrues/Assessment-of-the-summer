@@ -6,7 +6,7 @@
     top: 40rem;
   }
   #root .grep .List {
-    padding: 0 32px;
+    padding: 0 4.2667rem;
   }
   #root .grep .List .item p {
     margin-top: 1.3333rem;
@@ -29,23 +29,23 @@
     display: none;
     position: absolute;
     width: 100%;
-    top: 40rem;
+    top: 150px;
   }
   #root .grep .List {
     padding: 0 32px;
   }
   #root .grep .List .item p {
-    margin-top: 1.3333rem;
+    margin-top: 10px;
   }
   #root .grep .List .item p:nth-child(1) {
-    height: 5.3333rem;
-    font-size: 4.2667rem;
-    line-height: 5.3333rem;
+    height: 20px;
+    font-size: 16px;
+    line-height: 20px;
   }
   #root .grep .List .item p:nth-child(2) {
-    height: 4rem;
-    font-size: 3.4667rem;
-    line-height: 4rem;
+    height: 15px;
+    font-size: 14px;
+    line-height: 15px;
     color: #8a8a8a;
     font-weight: 300;
   }
