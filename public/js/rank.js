@@ -6,15 +6,16 @@ const axios = require("axios").default;
     const recommend = document.querySelector("#root .recommend");
     const rank = document.querySelector("#root .rank");
     const spans = document.querySelectorAll("#root .header .bottom span");
+    const footer = document.querySelector("#root .footer");
     spans[0].addEventListener("click", () => {
         recommend.style.display = 'block';
         rank.style.display = 'none';
-
+        footer.style.top = 190 + "rem";
     })
     spans[1].addEventListener("click", () => {
         recommend.style.display = 'none';
         rank.style.display = 'block';
-
+        footer.style.top = 350 + "rem";
     })
     const data = (await axios.get("http://124.221.249.219:8000/api/ranking")).data;
     console.log(data);
@@ -49,7 +50,7 @@ const axios = require("axios").default;
         image.appendChild(img)
         image.appendChild(span1)
         image.appendChild(span2);
-        
+
         content.appendChild(detial);
         content.appendChild(image)
 

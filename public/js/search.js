@@ -4,7 +4,6 @@
     const search = document.querySelector("#root .recommend .search .value");
     const close = document.querySelector("#root .recommend .search .close");
     let width = document.documentElement.clientWidth;
-    console.log(width);
     if (width < 770) {
         search.addEventListener("focus", () => {
             search.classList.add("active");

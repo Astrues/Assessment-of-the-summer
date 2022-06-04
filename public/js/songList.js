@@ -1,6 +1,7 @@
 const axios = require("axios").default;
 (async function () {
     const data = (await axios.get("http://124.221.249.219:8000/api/recommendations")).data
+    console.log(data);
     // 操作官方歌单
     const off = data.offical;
     const official = document.querySelector("#root .recommend .songList .official .List");
