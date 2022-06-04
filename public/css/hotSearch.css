@@ -1,21 +1,34 @@
 @media screen and (max-width: 770px) {
-  #root .hotSearch {
+  #root .recommend .hotSearch {
+    display: none;
     box-sizing: border-box;
     position: absolute;
     width: 100%;
+    height: 100%;
     top: 40rem;
+    background-color: #fafafa;
+    z-index: 5;
   }
-  #root .hotSearch .title {
+  #root .recommend .hotSearch .title {
     font-size: 4rem;
     margin: 2.6667rem;
     font-weight: 700;
   }
-  #root .hotSearch .List {
-    background-color: pink;
+  #root .recommend .hotSearch .history {
+    display: none;
+  }
+  #root .recommend .hotSearch .history .close {
+    position: absolute;
+    width: 3.6rem;
+    height: 3.6rem;
+    right: 2.6667rem;
+    top: 1.3333rem;
+  }
+  #root .recommend .hotSearch .history .HisList {
     display: flex;
     flex-wrap: wrap;
   }
-  #root .hotSearch .List .item {
+  #root .recommend .hotSearch .history .HisList .item {
     display: block;
     height: 6.4rem;
     line-height: 6.4rem;
@@ -23,8 +36,84 @@
     padding: 0 20px;
     background-color: #fff;
     border-radius: 6.4rem;
-    font-size: 4rem;
+    font-size: 3.5rem;
     margin-top: 2.6667rem;
+    margin-left: 2.6667rem;
+  }
+  #root .recommend .hotSearch .List {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #root .recommend .hotSearch .List .item {
+    display: block;
+    height: 6.4rem;
+    line-height: 6.4rem;
+    text-align: center;
+    padding: 0 20px;
+    background-color: #fff;
+    border-radius: 6.4rem;
+    font-size: 3.5rem;
+    margin-top: 2.6667rem;
+    margin-left: 2.6667rem;
+  }
+}
+@media screen and (min-width: 770px) {
+  #root .recommend .hotSearch {
+    display: none;
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    top: 20rem;
+    background-color: #fafafa;
+    z-index: 5;
+  }
+  #root .recommend .hotSearch .title {
+    font-size: 1.8667rem;
+    margin: 2.6667rem;
+    font-weight: 700;
+  }
+  #root .recommend .hotSearch .history {
+    display: none;
+  }
+  #root .recommend .hotSearch .history .close {
+    position: absolute;
+    width: 3.6rem;
+    height: 3.6rem;
+    right: 2.6667rem;
+    top: 1.3333rem;
+  }
+  #root .recommend .hotSearch .history .HisList {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #root .recommend .hotSearch .history .HisList .item {
+    display: block;
+    height: 3.2rem;
+    line-height: 3.2rem;
+    text-align: center;
+    padding: 0 2.6667rem;
+    background-color: #fff;
+    border-radius: 3.2rem;
+    font-size: 1.3333rem;
+    font-weight: 300;
+    margin-top: 1.3333rem;
+    margin-left: 2.6667rem;
+  }
+  #root .recommend .hotSearch .List {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #root .recommend .hotSearch .List .item {
+    display: block;
+    height: 3.2rem;
+    line-height: 3.2rem;
+    text-align: center;
+    padding: 0 2.6667rem;
+    background-color: #fff;
+    border-radius: 3.2rem;
+    font-size: 1.3333rem;
+    font-weight: 300;
+    margin-top: 1.3333rem;
     margin-left: 2.6667rem;
   }
 }

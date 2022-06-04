@@ -1,11 +1,11 @@
 @media screen and (max-width: 770px) {
-  #root .search {
+  #root .recommend .search {
     position: absolute;
     top: 30.6667rem;
     width: 100%;
     height: 8rem;
   }
-  #root .search img {
+  #root .recommend .search img {
     position: absolute;
     width: 4rem;
     height: 4rem;
@@ -14,7 +14,7 @@
     transform: translateX(-150%);
     z-index: 5;
   }
-  #root .search .value {
+  #root .recommend .search .value {
     width: 85.0667rem;
     height: 8rem;
     padding: 1.3333rem 0 1.0667rem 6.4rem;
@@ -26,15 +26,15 @@
     left: 50%;
     transform: translateX(-50%);
   }
-  #root .search .value::placeholder {
+  #root .recommend .search .value::placeholder {
     color: #8c8c8c;
     font-weight: 100;
     text-align: center;
   }
-  #root .search .active::placeholder {
+  #root .recommend .search .active::placeholder {
     text-align: left;
   }
-  #root .search .close {
+  #root .recommend .search .close {
     display: none;
     font-size: 4rem;
     font-weight: 700;
@@ -44,13 +44,13 @@
   }
 }
 @media screen and (min-width: 770px) {
-  #root .search {
+  #root .recommend .search {
     position: absolute;
     top: 16rem;
     width: 100%;
     height: 30px;
   }
-  #root .search img {
+  #root .recommend .search img {
     position: absolute;
     width: 2.4rem;
     height: 2.4rem;
@@ -59,7 +59,7 @@
     transform: translateX(-200%);
     z-index: 5;
   }
-  #root .search .value {
+  #root .recommend .search .value {
     width: 85.0667rem;
     height: 4rem;
     padding: 0.2rem 0 0.5333rem 3.2rem;
@@ -71,15 +71,15 @@
     left: 50%;
     transform: translateX(-50%);
   }
-  #root .search .value::placeholder {
+  #root .recommend .search .value::placeholder {
     color: #8c8c8c;
     font-weight: 100;
     text-align: center;
   }
-  #root .search .active::placeholder {
+  #root .recommend .search .active::placeholder {
     text-align: left;
   }
-  #root .search .close {
+  #root .recommend .search .close {
     font-size: 2rem;
     font-weight: 700;
     position: absolute;

@@ -1,8 +1,8 @@
 // 点击搜索框操作
 (function () {
-    const img = document.querySelector("#root .search img");
-    const search = document.querySelector("#root .search .value");
-    const close = document.querySelector("#root .search .close");
+    const img = document.querySelector("#root .recommend .search img");
+    const search = document.querySelector("#root .recommend .search .value");
+    const close = document.querySelector("#root .recommend .search .close");
     let width = document.documentElement.clientWidth;
     console.log(width);
     if (width < 770) {
@@ -16,11 +16,10 @@
         search.addEventListener("blur", () => {
             search.classList.remove("active")
             img.style.left = 50 + "%"
-            search.style.width = 85.0667 + "rem"
+            // search.style.width = 85.0667 + "rem"
             search.style.left = 50 + "%"
-            close.style.display = 'none';
         })
-    } else{
+    } else {
         search.addEventListener("focus", () => {
             search.classList.add("active");
             img.style.left = 15 + "%"
@@ -33,7 +32,6 @@
             img.style.left = 50 + "%"
             search.style.width = 85.0667 + "rem"
             search.style.left = 50 + "%"
-            close.style.display = 'none';
         })
     }
 

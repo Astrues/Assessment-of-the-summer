@@ -8,11 +8,27 @@ a {
 li {
   list-style: none;
 }
-body {
-  background-color: #fafafa;
+@media screen and (max-width: 770px) {
+  body {
+    background-color: #fafafa;
+  }
+  body #root {
+    margin: 0 auto;
+    position: relative;
+  }
+  body #root section {
+    display: block;
+  }
 }
-body #root {
-  margin: 0 auto;
-  height: 1000px;
-  position: relative;
+@media screen and (min-width: 770px) {
+  body {
+    background-color: #fafafa;
+  }
+  body #root {
+    margin: 0 auto;
+    position: relative;
+  }
+  body #root section {
+    display: block;
+  }
 }

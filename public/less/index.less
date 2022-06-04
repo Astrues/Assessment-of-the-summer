@@ -12,15 +12,41 @@ li {
     list-style: none;
 }
 
-body {
-    background-color: #fafafa;
 
-    #root {
-        // max-width: 520px;
-        // min-width: 320px;
-        margin: 0 auto;
-        // height: 200px;
-        height: 1000px;
-        position: relative;
+@media screen and (max-width:770px) {
+    body {
+        background-color: #fafafa;
+
+        #root {
+            // max-width: 520px;
+            // min-width: 320px;
+            margin: 0 auto;
+            // height: 200px;
+            // height: 1500px;
+            position: relative;
+
+            section {
+                display: block;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:770px) {
+    body {
+        background-color: #fafafa;
+
+        #root {
+            // max-width: 520px;
+            // min-width: 320px;
+            margin: 0 auto;
+            // height: 200px;
+            // height: 1000px;
+            position: relative;
+
+            section {
+                display: block;
+            }
+        }
     }
 }
