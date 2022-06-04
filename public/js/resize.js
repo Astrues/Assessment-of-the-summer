@@ -11,5 +11,4 @@ function change() {
         fs = 3.2;
     }
     html.style.fontSize = fs + 'px'
-    console.log(fs);
 }

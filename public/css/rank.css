@@ -25,7 +25,7 @@
   }
   #root .rank .List .item .content .detial ol li {
     list-style: decimal;
-    font-size: 2.6667rem;
+    font-size: 2.4rem;
     margin: 2.6667rem;
   }
   #root .rank .List .item .content .detial ol li::marker {
@@ -50,6 +50,62 @@
     position: absolute;
     bottom: 0;
     right: 1.3333rem;
+    color: #ffffff;
+  }
+}
+@media screen and (min-width: 770px) {
+  #root .rank {
+    display: none;
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    top: 100px;
+  }
+  #root .rank .List .item {
+    margin: 2.6667rem;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border-radius: 2.6667rem;
+  }
+  #root .rank .List .item .content {
+    display: flex;
+    padding: 0 0 0 2rem;
+  }
+  #root .rank .List .item .content .detial {
+    flex-grow: 1;
+  }
+  #root .rank .List .item .content .detial p {
+    font-size: 16px;
+    font-weight: 700;
+  }
+  #root .rank .List .item .content .detial ol li {
+    list-style: decimal;
+    font-size: 14px;
+    margin: 5px 5px 5px 15px;
+  }
+  #root .rank .List .item .content .detial ol li::marker {
+    font-weight: 700;
+  }
+  #root .rank .List .item .content .image {
+    position: relative;
+    background-color: #000;
+  }
+  #root .rank .List .item .content .image img {
+    display: block;
+    width: 107px;
+    height: 107px;
+  }
+  #root .rank .List .item .content .image span:nth-of-type(1) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #ffffff;
+    font-size: 14px;
+  }
+  #root .rank .List .item .content .image span:nth-of-type(2) {
+    position: absolute;
+    bottom: 0;
+    right: 4px;
     color: #ffffff;
   }
 }

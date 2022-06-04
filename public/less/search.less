@@ -7,48 +7,54 @@
                 width: 100%;
                 height: 8rem;
 
-                img {
-                    position: absolute;
-                    width: 4rem;
-                    height: 4rem;
-                    top: 2rem;
-                    left: 50%;
-                    transform: translateX(-150%);
-                    z-index: 5;
-                }
-
-                .value {
-                    width: 85.0667rem;
+                .content {
+                    position: relative;
+                    width: 100%;
                     height: 8rem;
-                    padding: 1.3333rem 0 1.0667rem 6.4rem;
-                    border-radius: 5.6rem;
-                    outline: none;
-                    border: 0;
-                    font-size: 3rem;
-                    position: absolute;
-                    left: 50%;
-                    transform: translateX(-50%);
 
-                    &::placeholder {
-                        color: #8c8c8c;
-                        font-weight: 100;
-                        text-align: center;
+                    img {
+                        position: absolute;
+                        width: 4rem;
+                        height: 4rem;
+                        top: 2rem;
+                        left: 50%;
+                        transform: translateX(-150%);
+                        z-index: 5;
                     }
-                }
 
-                .active {
-                    &::placeholder {
-                        text-align: left;
+                    .value {
+                        width: 85.0667rem;
+                        height: 8rem;
+                        padding: 1.3333rem 0 1.0667rem 6.4rem;
+                        border-radius: 5.6rem;
+                        outline: none;
+                        border: 0;
+                        font-size: 3rem;
+                        position: absolute;
+                        left: 50%;
+                        transform: translateX(-50%);
+
+                        &::placeholder {
+                            color: #8c8c8c;
+                            font-weight: 100;
+                            text-align: center;
+                        }
                     }
-                }
 
-                .close {
-                    display: none;
-                    font-size: 4rem;
-                    font-weight: 700;
-                    position: absolute;
-                    right: 2.6667rem;
-                    top: 1.5rem;
+                    .active {
+                        &::placeholder {
+                            text-align: left;
+                        }
+                    }
+
+                    .close {
+                        display: none;
+                        font-size: 4rem;
+                        font-weight: 700;
+                        position: absolute;
+                        right: 2.6667rem;
+                        top: 1.5rem;
+                    }
                 }
             }
         }
@@ -64,48 +70,52 @@
                 width: 100%;
                 height: 30px;
 
-                img {
-                    position: absolute;
-                    width: 2.4rem;
-                    height: 2.4rem;
-                    top: .6667rem;
-                    left: 50%;
-                    transform: translateX(-200%);
-                    z-index: 5;
-                }
-
-                .value {
-                    width: 85.0667rem;
-                    height: 4rem;
-                    padding: .2rem 0 .5333rem 3.2rem;
-                    border-radius: 5.6rem;
-                    outline: none;
-                    border: 0;
-                    font-size: 2rem;
-                    position: absolute;
-                    left: 50%;
-                    transform: translateX(-50%);
-
-                    &::placeholder {
-                        color: #8c8c8c;
-                        font-weight: 100;
-                        text-align: center;
+                .content {
+                    height: 30px;
+                    img {
+                        display: block;
+                        position: absolute;
+                        width: 2.4rem;
+                        height: 2.4rem;
+                        top: .6667rem;
+                        left: 50%;
+                        transform: translateX(-200%);
+                        z-index: 5;
                     }
-                }
 
-                .active {
-                    &::placeholder {
-                        text-align: left;
+                    .value {
+                        width: 85.0667rem;
+                        height: 4rem;
+                        padding: .2rem 0 .5333rem 3.2rem;
+                        border-radius: 5.6rem;
+                        outline: none;
+                        border: 0;
+                        font-size: 2rem;
+                        position: absolute;
+                        left: 50%;
+                        transform: translateX(-50%);
+
+                        &::placeholder {
+                            color: #8c8c8c;
+                            font-weight: 100;
+                            text-align: center;
+                        }
                     }
-                }
 
-                .close {
-                    // display: none;
-                    font-size: 2rem;
-                    font-weight: 700;
-                    position: absolute;
-                    right: 10.6667rem;
-                    top: .8rem;
+                    .active {
+                        &::placeholder {
+                            text-align: left;
+                        }
+                    }
+
+                    .close {
+                        // display: none;
+                        font-size: 2rem;
+                        font-weight: 700;
+                        position: absolute;
+                        right: 10.6667rem;
+                        top: .8rem;
+                    }
                 }
             }
         }

@@ -7,18 +7,20 @@ const axios = require("axios").default;
     const rank = document.querySelector("#root .rank");
     const spans = document.querySelectorAll("#root .header .bottom span");
     const footer = document.querySelector("#root .footer");
+    let width = document.documentElement.clientWidth;
     spans[0].addEventListener("click", () => {
         recommend.style.display = 'block';
         rank.style.display = 'none';
-        footer.style.top = 190 + "rem";
+        if (width < 770) footer.style.top = 190 + "rem";
+        if (width > 770) footer.style.top = 110 + "rem";
     })
     spans[1].addEventListener("click", () => {
         recommend.style.display = 'none';
         rank.style.display = 'block';
-        footer.style.top = 350 + "rem";
+        if (width < 770) footer.style.top = 350 + "rem";
+        if (width > 770) footer.style.top = 180 + "rem";
     })
     const data = (await axios.get("http://124.221.249.219:8000/api/ranking")).data;
-    console.log(data);
     const List = rank.querySelector(".List");
     for (let i = 0; i < data.length; i++) {
         const li = document.createElement("li");
@@ -40,7 +42,8 @@ const axios = require("axios").default;
         detial.appendChild(p);
         detial.appendChild(ol);
 
-        const image = document.createElement("image");
+        const image = document.createElement("div");
+        image.className = 'image';
         const img = document.createElement("img");
         img.src = data[i].cover;
         const span1 = document.createElement("span");
