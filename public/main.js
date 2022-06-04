@@ -1,0 +1,10 @@
+import './css/index.css'
+import './css/header.css'
+import './css/search.css'
+import './css/hotSearch.css'
+
+import './js/index'
+import './js/resize'
+import './js/header'
+import './js/search'
+import './js/hotSearch'
