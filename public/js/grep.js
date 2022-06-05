@@ -10,6 +10,7 @@ let newArr = [];
     const close = document.querySelector("#root .recommend .hotSearch .history .close");
     const pre = hotSearch.querySelector(".history .HisList");
     search.addEventListener("focus", () => {
+        grep.style.display = 'none'
         window.addEventListener("keydown", async (e) => {
             // 如果搜索框不为空且按下的是确定键就进行搜索
             if (search.value !== '' && e.key === 'Enter') {
