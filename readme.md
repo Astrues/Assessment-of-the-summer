@@ -36,3 +36,7 @@
 - 部署到了 GitHub pages 上
 - 媒体查询
 - dragula 库
+
+### 静态页面
+
+- https://astrues.github.io/Assessment%20of%20the%20summer/
