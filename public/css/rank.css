@@ -11,6 +11,7 @@
     box-sizing: border-box;
     background-color: #ffffff;
     border-radius: 2.6667rem;
+    overflow: hidden;
   }
   #root .rank .List .item .content {
     display: flex;
@@ -41,16 +42,22 @@
   }
   #root .rank .List .item .content .image span:nth-of-type(1) {
     position: absolute;
-    top: 1.3333rem;
-    right: 2.6667rem;
-    color: #ffffff;
+    top: 0.6667rem;
+    right: 1.3333rem;
     font-size: 2.6667rem;
+    padding: 5px;
+    border-radius: 2rem;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
   }
   #root .rank .List .item .content .image span:nth-of-type(2) {
     position: absolute;
     bottom: 0;
     right: 1.3333rem;
     color: #ffffff;
+    padding: 0 5px;
+    border-radius: 2rem;
+    background-color: rgba(0, 0, 0, 0.4);
   }
 }
 @media screen and (min-width: 770px) {
@@ -65,7 +72,8 @@
     margin: 2.6667rem;
     box-sizing: border-box;
     background-color: #ffffff;
-    border-radius: 2.6667rem;
+    border-radius: 10px;
+    overflow: hidden;
   }
   #root .rank .List .item .content {
     display: flex;
@@ -100,12 +108,22 @@
     top: 0;
     right: 0;
     color: #ffffff;
-    font-size: 14px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
   }
   #root .rank .List .item .content .image span:nth-of-type(2) {
     position: absolute;
     bottom: 0;
     right: 4px;
     color: #ffffff;
+    height: 6px;
+    line-height: 6px;
+    font-size: 6px;
+    padding: 5px;
+    border-radius: 1.3333rem;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
   }
 }
