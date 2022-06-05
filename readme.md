@@ -40,3 +40,4 @@
 ### 静态页面
 
 - https://astrues.github.io/Assessment%20of%20the%20summer/
+(手机上能打开，电脑不行接口不是https的)
