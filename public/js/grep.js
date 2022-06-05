@@ -19,6 +19,7 @@ let newArr = [];
                 let song = search.value;
                 const songs = (await axios.get(`http://124.221.249.219:8000/api/search?keyword=${song}`)).data
                 render(song, songs);
+                search.value = ''
             }
         })
         const items = pre.querySelectorAll(".item")
@@ -40,6 +41,7 @@ let newArr = [];
     close.addEventListener("click", () => {
         pre.innerHTML = '';
         localStorage.clear();
+        close.parentElement.style.display = 'none';
     })
     // 页面加载时就查询本地是否有搜索记录，有就添加节点,并把内容添加到newArr里面
     if (localStorage.length > 0) {
