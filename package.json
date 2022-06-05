@@ -17,6 +17,7 @@
     "babel-loader": "^8.2.5",
     "css-loader": "^6.7.1",
     "css-minimizer-webpack-plugin": "^4.0.0",
+    "dragula": "^3.7.3",
     "html-webpack-plugin": "^5.5.0",
     "html-withimg-loader": "^0.1.16",
     "mini-css-extract-plugin": "^2.6.0",
@@ -36,5 +37,5 @@
   "dependencies": {
     "axios": "^0.27.2"
   },
-  "proxy":"http://localhost:5055/"
+  "proxy": "http://localhost:5055/"
 }

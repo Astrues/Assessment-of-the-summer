@@ -1,0 +1,31 @@
+@media screen and (max-width: 770px) {
+  body .gu-mirror {
+    position: absolute;
+  }
+  body .gu-mirror .content {
+    opacity: 0.8;
+  }
+  body .gu-mirror .content img {
+    width: 29.0667rem;
+    height: 29.0667rem;
+    border-radius: 1.3333rem;
+  }
+  body .gu-mirror .content .num {
+    position: absolute;
+    right: 0;
+    bottom: 5.3333rem;
+    height: 1.3333rem;
+    line-height: 1.3333rem;
+    font-size: 1.3333rem;
+    padding: 0.6667rem;
+    border-radius: 1.3333rem;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+  }
+  body .gu-mirror .content h3 {
+    float: left;
+    font-size: 3.3333rem;
+    font-weight: 300;
+    text-align: center;
+  }
+}

@@ -12,7 +12,7 @@ const axios = require("axios").default;
     render(tatsujin, tat);
     // 操作专区
     const col = data.column;
-    const column =document.querySelector("#root .recommend .songList .prefecture .List")
+    const column = document.querySelector("#root .recommend .songList .prefecture .List")
     for (let i = 0; i < col.length; i++) {
         const li = document.createElement("li");
         li.className = 'item';
@@ -39,6 +39,9 @@ const axios = require("axios").default;
 
 function render(obj, data) {
     for (let i = 0; i < data.length; i++) {
+        const content = document.createElement("div");
+        content.className = 'content'
+
         const li = document.createElement("li");
         li.className = 'item';
         const img = document.createElement("img");
@@ -48,9 +51,10 @@ function render(obj, data) {
         div.innerHTML = `▶${data[i].views}万`;
         const h3 = document.createElement("h3");
         h3.innerHTML = data[i].title;
-        li.appendChild(img)
-        li.appendChild(div)
-        li.appendChild(h3)
+        content.appendChild(img)
+        content.appendChild(div)
+        content.appendChild(h3)
+        li.appendChild(content)
         obj.appendChild(li)
     }
 }
