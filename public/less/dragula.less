@@ -1,42 +1,86 @@
 @media screen and (max-width:770px) {
     body {
-        .gu-mirror {
-            // display: none;
-            position: absolute;
-            // margin-right: 2rem;
-            .content {
-                // position: relative;
-                // top: 16rem;
-                // left: 2.6667rem;
-                opacity: .8;
-                img {
-                    
-                    width: 29.0667rem;
-                    height: 29.0667rem;
-                    border-radius: 1.3333rem;
-                }
-                .num {
-                    // display: none;
-                    position: absolute;
-                    right: 0;
-                    bottom: 5.3333rem;
-                    height: 1.3333rem;
-                    line-height: 1.3333rem;
-                    font-size: 1.3333rem;
-                    padding: .6667rem;
-                    border-radius: 1.3333rem;
-                    background-color: rgba(0, 0, 0, .4);
-                    color: #fff;
-                }
 
-                h3 {
-                    // display: none;
-                    float: left;
-                    font-size: 3.3333rem;
-                    font-weight: 300;
-                    text-align: center;
-                }
+        .gu-mirror {
+
+            transition: opacity 0.4s ease-in-out;
+            position: fixed;
+            cursor: -webkit-grabbing;
+
+            img {
+
+                width: 29.0667rem;
+                height: 29.0667rem;
+                border-radius: 1.3333rem;
+            }
+
+            .num {
+                position: absolute;
+                right: 0;
+                bottom: 5.3333rem;
+                height: 1.3333rem;
+                line-height: 1.3333rem;
+                font-size: 1.3333rem;
+                padding: .6667rem;
+                border-radius: 1.3333rem;
+                background-color: rgba(0, 0, 0, .4);
+                color: #fff;
+            }
+
+            h3 {
+                float: left;
+                font-size: 3.3333rem;
+                font-weight: 300;
+                text-align: center;
             }
         }
+
+        // 必须要有这个属性不然不生效
+        .gu-hide {
+            display: none;
+        }
+
+    }
+}
+
+@media screen and (min-width:770px) {
+    body {
+
+        .gu-mirror {
+            opacity: .8;
+            position: fixed;
+
+            img {
+                width: 109px;
+                height: 109px;
+                border-radius: 1.3333rem;
+            }
+
+            .num {
+                position: absolute;
+                left: 35px;
+                bottom: 25px;
+                height: 6px;
+                line-height: 6px;
+                font-size: 6px;
+                padding: 5px;
+                border-radius: 1.3333rem;
+                background-color: rgba(0, 0, 0, .4);
+                color: #fff;
+            }
+
+            h3 {
+                font-size: 15px;
+                float: left;
+                font-weight: 300;
+                text-align: center;
+            }
+        }
+
+        // 必须要有这个属性不然不生效
+        .gu-hide {
+            display: none;
+        }
+
     }
 }

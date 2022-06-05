@@ -1,16 +1,15 @@
 @media screen and (max-width: 770px) {
   body .gu-mirror {
-    position: absolute;
+    transition: opacity 0.4s ease-in-out;
+    position: fixed;
+    cursor: -webkit-grabbing;
   }
-  body .gu-mirror .content {
-    opacity: 0.8;
-  }
-  body .gu-mirror .content img {
+  body .gu-mirror img {
     width: 29.0667rem;
     height: 29.0667rem;
     border-radius: 1.3333rem;
   }
-  body .gu-mirror .content .num {
+  body .gu-mirror .num {
     position: absolute;
     right: 0;
     bottom: 5.3333rem;
@@ -22,10 +21,45 @@
     background-color: rgba(0, 0, 0, 0.4);
     color: #fff;
   }
-  body .gu-mirror .content h3 {
+  body .gu-mirror h3 {
     float: left;
     font-size: 3.3333rem;
     font-weight: 300;
     text-align: center;
+  }
+  body .gu-hide {
+    display: none;
+  }
+}
+@media screen and (min-width: 770px) {
+  body .gu-mirror {
+    opacity: 0.8;
+    position: fixed;
+  }
+  body .gu-mirror img {
+    width: 109px;
+    height: 109px;
+    border-radius: 1.3333rem;
+  }
+  body .gu-mirror .num {
+    position: absolute;
+    left: 35px;
+    bottom: 25px;
+    height: 6px;
+    line-height: 6px;
+    font-size: 6px;
+    padding: 5px;
+    border-radius: 1.3333rem;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+  }
+  body .gu-mirror h3 {
+    font-size: 15px;
+    float: left;
+    font-weight: 300;
+    text-align: center;
+  }
+  body .gu-hide {
+    display: none;
   }
 }
