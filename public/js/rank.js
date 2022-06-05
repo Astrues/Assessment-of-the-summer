@@ -1,5 +1,3 @@
-const { list } = require("postcss");
-
 const axios = require("axios").default;
 // 排行榜
 (async function () {

@@ -7,7 +7,6 @@ import './css/footer.css'
 import './css/grep.css'
 import './css/rank.css'
 
-import './js/index'
 import './js/resize'
 import './js/header'
 import './js/search'
