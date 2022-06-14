@@ -41,6 +41,9 @@ let newArr = [];
     close.addEventListener("click", () => {
         pre.innerHTML = '';
         localStorage.clear();
+        // 清空数组
+        songArr = [];
+        newArr = [];
         close.parentElement.style.display = 'none';
     })
     // 页面加载时就查询本地是否有搜索记录，有就添加节点,并把内容添加到newArr里面
@@ -95,7 +98,6 @@ function render(song, songs) {
     songArr.unshift(song)
     // set去重
     newArr = Array.from(new Set(songArr));
-    console.log(newArr);
     localStorage.clear();
     for (let i = 0; i < newArr.length; i++) {
         localStorage.setItem(i, newArr[i]);

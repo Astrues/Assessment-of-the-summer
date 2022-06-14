@@ -66,8 +66,8 @@ module.exports = {
             },
             // html资源
             {
-                test:/\.html$/,
-                use:['html-withimg-loader']
+                test: /\.html$/,
+                use: ['html-withimg-loader']
             }
         ],
     },
